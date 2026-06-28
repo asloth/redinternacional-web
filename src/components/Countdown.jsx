@@ -37,13 +37,13 @@ function Countdown() {
       <p className="text-xs font-semibold tracking-[0.25em] uppercase text-brand-amber mb-10">
         La Cumbre comienza en
       </p>
-      <div className="flex justify-center gap-8 md:gap-16">
+      <div className="flex justify-center gap-4 sm:gap-10 md:gap-16">
         {units.map(({ label, value }) => (
           <div key={label} className="flex flex-col items-center">
-            <span className="text-5xl md:text-7xl font-black tabular-nums leading-none">
+            <span className="text-4xl sm:text-5xl md:text-7xl font-black tabular-nums leading-none">
               {pad(value)}
             </span>
-            <span className="mt-3 text-xs font-semibold uppercase tracking-widest text-white/50">
+            <span className="mt-2 md:mt-3 text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-white/50">
               {label}
             </span>
           </div>

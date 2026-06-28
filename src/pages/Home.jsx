@@ -101,11 +101,11 @@ function Home() {
 
         {/* Top badge row */}
         <div className="absolute top-20 left-0 right-0 flex justify-center z-10 px-4">
-          <div className="flex items-center gap-3 border border-white/25 rounded-full px-5 py-2 backdrop-blur-sm bg-white/5">
-            <img src="/images/logos/logo-negativo.png" alt="Red Internacional" className="h-5" />
-            <span className="text-white/60 text-xs">|</span>
-            <span className="text-white/80 text-xs font-semibold tracking-wider uppercase">
-              2ª Edición Internacional
+          <div className="flex items-center gap-2 sm:gap-3 border border-white/25 rounded-full px-4 sm:px-5 py-2 backdrop-blur-sm bg-white/5">
+            <img src="/images/logos/logo-negativo.png" alt="Red Internacional" className="h-4 sm:h-5 hidden xs:block" />
+            <span className="text-white/60 text-xs hidden sm:block">|</span>
+            <span className="text-white/80 text-[10px] sm:text-xs font-semibold tracking-wider uppercase">
+              Red Internacional · 2ª Edición Internacional
             </span>
           </div>
         </div>
@@ -120,34 +120,34 @@ function Home() {
           />
 
           {/* Main title */}
-          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[1.05] tracking-tight">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-[1.1] tracking-tight">
             Cumbre Internacional
             <br />
             <span className="text-brand-amber">de Agentes de Cambio</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-3 text-xl md:text-2xl font-bold uppercase tracking-[0.15em] text-white/80">
+          <p className="mt-3 text-base sm:text-xl md:text-2xl font-bold uppercase tracking-wide md:tracking-[0.15em] text-white/80">
             Construyendo País 2026
           </p>
 
           {/* Location + date pills */}
-          <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
-            <span className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 text-sm font-medium">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-medium">
               📍 Jalisco, México
             </span>
-            <span className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 text-sm font-medium">
-              🗓 28, 29 y 30 de Octubre · 2026
+            <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-medium">
+              🗓 28–30 Oct · 2026
             </span>
           </div>
 
           {/* CTAs */}
-          <div className="mt-10 flex flex-wrap gap-4 justify-center">
+          <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
             <a
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-brand-amber text-white font-black text-sm uppercase tracking-widest px-10 py-4 rounded-full hover:opacity-90 transition-opacity inline-flex items-center gap-3"
+              className="w-full sm:w-auto bg-brand-amber text-white font-black text-sm uppercase tracking-widest px-10 py-4 rounded-full hover:opacity-90 transition-opacity inline-flex items-center justify-center gap-3"
             >
               Aplica ahora
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -156,7 +156,7 @@ function Home() {
             </a>
             <Link
               to="/sobre-la-cumbre"
-              className="border-2 border-white/40 text-white font-black text-sm uppercase tracking-widest px-10 py-4 rounded-full hover:bg-white/10 hover:border-white/70 transition-all"
+              className="w-full sm:w-auto border-2 border-white/40 text-white font-black text-sm uppercase tracking-widest px-10 py-4 rounded-full hover:bg-white/10 hover:border-white/70 transition-all text-center"
             >
               Conocer más
             </Link>
@@ -269,7 +269,7 @@ function Home() {
         </div>
         <div className="w-12 h-1 bg-brand-amber mb-0" />
       </section>
-      <div>
+      <div className="overflow-x-hidden">
         {ejes.map((eje, i) => (
           <div
             key={i}
