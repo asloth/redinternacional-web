@@ -88,7 +88,7 @@ function Home() {
   return (
     <main>
       {/* ── HERO — full viewport, centered, gradient overlay ── */}
-      <section className="relative min-h-screen flex flex-col justify-end pt-16 overflow-hidden">
+      <section className="relative min-h-screen flex flex-col justify-center pt-16 overflow-hidden">
         {/* Background photo */}
         <img
           src="/images/cumbre-hero.png"
@@ -100,7 +100,7 @@ function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0c1f42] via-[#0c1f42]/65 to-[#0c1f42]/20" />
 
         {/* Hero content — bottom aligned */}
-        <div className="relative z-10 text-center text-white px-6 pb-16 md:pb-24 max-w-5xl mx-auto w-full">
+        <div className="relative z-10 text-center text-white px-6 py-12 md:py-16 max-w-5xl mx-auto w-full">
           {/* Cumbre logo */}
           <img
             src="/images/cumbre-logo.png"
