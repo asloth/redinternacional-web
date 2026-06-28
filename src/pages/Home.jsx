@@ -99,25 +99,19 @@ function Home() {
         {/* Gradient overlay — dark bottom, lighter top */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0c1f42] via-[#0c1f42]/65 to-[#0c1f42]/20" />
 
-        {/* Top badge row */}
-        <div className="absolute top-20 left-0 right-0 flex justify-center z-10 px-4">
-          <div className="flex items-center gap-2 sm:gap-3 border border-white/25 rounded-full px-4 sm:px-5 py-2 backdrop-blur-sm bg-white/5">
-            <img src="/images/logos/logo-negativo.png" alt="Red Internacional" className="h-4 sm:h-5 hidden xs:block" />
-            <span className="text-white/60 text-xs hidden sm:block">|</span>
-            <span className="text-white/80 text-[10px] sm:text-xs font-semibold tracking-wider uppercase">
-              Red Internacional · 2ª Edición Internacional
-            </span>
-          </div>
-        </div>
-
         {/* Hero content — bottom aligned */}
         <div className="relative z-10 text-center text-white px-6 pb-16 md:pb-24 max-w-5xl mx-auto w-full">
           {/* Cumbre logo */}
           <img
             src="/images/cumbre-logo.png"
             alt="Logo Cumbre Construyendo País"
-            className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-6 drop-shadow-2xl rounded-full"
+            className="w-28 h-28 md:w-36 md:h-36 mx-auto mb-4 drop-shadow-2xl rounded-full"
           />
+
+          {/* Eyebrow */}
+          <p className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-white/60 mb-4">
+            Red Internacional · 2ª Edición Internacional
+          </p>
 
           {/* Main title */}
           <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-black uppercase leading-[1.1] tracking-tight">
