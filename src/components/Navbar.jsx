@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
-const GOOGLE_FORM_URL = '#' // TODO: Replace with the actual Google Form URL
+const GOOGLE_FORM_URL = 'https://forms.gle/TThigmdBt4xdBABEA'
 
 const navLinks = [
   { to: '/sobre-la-cumbre', label: 'Sobre nosotros' },

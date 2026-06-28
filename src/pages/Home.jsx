@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Countdown from '../components/Countdown'
 
-const GOOGLE_FORM_URL = '#' // TODO: Replace with actual Google Form URL
+const GOOGLE_FORM_URL = 'https://forms.gle/TThigmdBt4xdBABEA'
 
 const ejes = [
   {

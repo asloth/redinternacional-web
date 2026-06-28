@@ -1,4 +1,4 @@
-const GOOGLE_FORM_URL = '#' // TODO: Replace with actual Google Form URL
+const GOOGLE_FORM_URL = 'https://forms.gle/TThigmdBt4xdBABEA'
 
 const requisitos = [
   'Ser joven entre 16 y 35 años (o estudiante universitario sin límite de edad).',
